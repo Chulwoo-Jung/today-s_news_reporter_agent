@@ -5,14 +5,10 @@ from telegram.ext import (
     MessageHandler,
     filters,
 )
-from env import TELEGRAM_BOT_TOKEN
 from chatbot_crew import ChatBotCrew
 from db import add_to_conversation
-from dotenv import load_dotenv
-import os
+from env import TELEGRAM_BOT_TOKEN
 
-load_dotenv()
-TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 
 
 async def handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
