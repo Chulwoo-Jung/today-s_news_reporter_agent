@@ -1,0 +1,11 @@
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+FIRECRAWL_API_KEY = os.getenv("FIRECRAWL_API_KEY")
+GOOGLE_SEARCH_API_KEY = os.getenv("GOOGLE_SEARCH_API_KEY")
+GOOGLE_SEARCH_CX = os.getenv("GOOGLE_SEARCH_CX")
+NAVER_API_CLIENT_ID = os.getenv("NAVER_API_CLIENT_ID")
+NAVER_API_SECRET_KEY = os.getenv("NAVER_API_SECRET_KEY")
