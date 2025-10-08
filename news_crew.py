@@ -139,7 +139,7 @@ class NewsCrew:
                 - Translate the content into English if it is not in English.
             4. Summarize the relevant and important content.
                 - Summarize the critical and important news content in the same format consistently.
-                - Summarized the content in 3-4 sentences.
+                - Summarized the content in 4-5 sentences.
                 - Keep the original point of news and the core message of the news.
             ** Important **
             - Access the real URL from the research result of previous tasks.
