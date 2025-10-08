@@ -45,7 +45,7 @@ Implement these 5 commands with user-friendly responses:
 TECHNICAL REQUIREMENTS
 ---------------------
 1. Timezone
-- Use 'Asia/Seoul' for all time calculations
+- Use 'EU/Berlin' for all time calculations
 
 2. Long Messages
 - Split messages >4096 chars into 3000-char chunks
