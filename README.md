@@ -326,19 +326,23 @@ The system generates structured outputs at each stage:
 
 ### **Telegram Bot in Action**
 
-{Leave space for screenshots}
 
-**Screenshot 1: /start command - Welcome message**
-- [ ] Add screenshot here
+**/start command - Welcome message**
 
-**Screenshot 2: /get command - Instant briefing delivery**
-- [ ] Add screenshot here
+**/schedule command - Setting up daily briefing**
+ 
+<img width="406" height="759" alt="Screenshot 2025-10-08 at 11 31 38 pm" src="https://github.com/user-attachments/assets/3fa7d991-47f3-4b57-b366-6d71d3c08d4f" />
 
-**Screenshot 3: /schedule command - Setting up daily briefing**
-- [ ] Add screenshot here
+<img width="414" height="303" alt="Screenshot 2025-10-08 at 11 31 54 pm" src="https://github.com/user-attachments/assets/ac000093-ea29-4591-a323-c495fb4345bf" />
 
-**Screenshot 4: Final news briefing format**
-- [ ] Add screenshot here
+
+**/get command - Instant briefing delivery, Final news briefing format**
+<img width="907" height="701" alt="Screenshot 2025-10-08 at 11 35 18 pm" src="https://github.com/user-attachments/assets/eb77dde8-da33-41fb-9849-28090a4e9676" />
+
+<img width="920" height="730" alt="Screenshot 2025-10-08 at 11 36 04 pm" src="https://github.com/user-attachments/assets/c29db275-d06f-4d3b-b399-d946d7085bbb" />
+
+<img width="921" height="784" alt="Screenshot 2025-10-08 at 11 36 25 pm" src="https://github.com/user-attachments/assets/a122dfd3-6dd8-4203-bf94-beb31712551e" />
+
 
 ---
 
