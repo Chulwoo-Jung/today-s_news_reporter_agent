@@ -1,0 +1,85 @@
+```json
+[
+    {
+        "title": "금값 사상 첫 4000달러 돌파",
+        "url": "https://www.donga.com/news/Economy/article/all/20251008/132527382/2",
+        "category": "General",
+        "summary": "금 가격이 사상 처음으로 트로이온스(31.1034768g)당 4000달러를 넘어서며, 미국의 금리 인하와 연관된 불안정한 경제 상황 속에서 안전 자산으로 주목받고 있습니다.",
+        "published_date": "Thu, 09 Oct 2025 01:40:00 +0900",
+        "source": "동아일보",
+        "importance_score": "1"
+    },
+    {
+        "title": "삼중고 철강, 中에 치이고 美이어 EU도 “관세 50%”",
+        "url": "https://www.donga.com/news/Economy/article/all/20251008/132527380/2",
+        "category": "General",
+        "summary": "EU가 수입 철강에 대한 고관세를 50%로 인상함에 따라 한국 철강업계가 미국과 중국의 압박에 이어 새로운 위기를 맞았습니다.",
+        "published_date": "Thu, 09 Oct 2025 01:40:00 +0900",
+        "source": "동아일보",
+        "importance_score": "1"
+    },
+    {
+        "title": "금값 올해만 53% 뛰어… 美셧다운-관세 불안속 ‘안전자산 랠리’",
+        "url": "https://www.donga.com/news/Economy/article/all/20251008/132527259/2",
+        "category": "General",
+        "summary": "금 가격 상승이 뚜렷해지면서 안전자산으로의 선호가 증가하고 있으며, 경제의 불확실성이 커지고 있습니다.",
+        "published_date": "Thu, 09 Oct 2025 01:40:00 +0900",
+        "source": "동아일보",
+        "importance_score": "1"
+    },
+    {
+        "title": "韓철강 수출 1위 EU도 관세폭탄… K스틸법은 국회서 발 묶여",
+        "url": "https://www.donga.com/news/Economy/article/all/20251008/132527141/2",
+        "category": "General",
+        "summary": "한국 철강업계가 미국과 중화권 외에도 EU 기구의 관세 인상에 따른 삼중 타격을 받고 있습니다.",
+        "published_date": "Thu, 09 Oct 2025 01:40:00 +0900",
+        "source": "동아일보",
+        "importance_score": "1"
+    },
+    {
+        "title": "WTO, 내년 세계 무역성장률 1.8→0.5% 낮춰",
+        "url": "https://www.donga.com/news/Inter/article/all/20251008/132527138/2",
+        "category": "General",
+        "summary": "세계무역기구(WTO)가 내년 무역 성장률 전망치를 크게 하향 조정해 글로벌 경제의 어려움을 반영하고 있습니다.",
+        "published_date": "Thu, 09 Oct 2025 01:40:00 +0900",
+        "source": "동아일보",
+        "importance_score": "1"
+    },
+    {
+        "title": "EU 철강 쿼터 감축 및 관세안, EU 자동차 업계도 비판 나서",
+        "url": "https://www.hankyung.com/article/202510088627i",
+        "category": "General",
+        "summary": "EU의 철강 쿼터 감축과 관세가 자동차 업계로부터 비판을 받고 있으며, 이는 한국에 미치는 영향도 큽니다.",
+        "published_date": "Wed, 08 Oct 2025 22:09:18 +0900",
+        "source": "한국경제",
+        "importance_score": "1"
+    },
+    {
+        "title": "뉴욕증시, AI 기대감에 전 날 하락 딛고 반등",
+        "url": "https://www.hankyung.com/article/202510088665i",
+        "category": "General",
+        "summary": "AI 관련 기대감으로 뉴욕 증시가 하락 이후 반등하며 글로벌 시장 전반에 긍정적인 영향을 미치고 있습니다.",
+        "published_date": "Wed, 08 Oct 2025 23:19:44 +0900",
+        "source": "한국경제",
+        "importance_score": "1"
+    },
+    {
+        "title": "연초대비 50% 넘게 뛴 금값 …올들어 '금ETF'에 91조 몰려",
+        "url": "https://www.hankyung.com/article/202510088647i",
+        "category": "General",
+        "summary": "금값이 올해 50% 이상 급등한 가운데 금 ETF에 대한 투자도 크게 증가하며 금 시장의 변동성을 보여줍니다.",
+        "published_date": "Wed, 08 Oct 2025 22:34:10 +0900",
+        "source": "한국경제",
+        "importance_score": "1"
+    },
+    {
+        "title": "EU 수입 쿼터 및 관세 관련 대책 발표",
+        "url": "https://www.hankyung.com/article/202510088605i",
+        "category": "General",
+        "summary": "EU가 철강 및 기타 자원에 대한 수입 쿼터와 관세 관련 대책을 발표하며, 한국과의 무역 관계에 영향을 미치고 있습니다.",
+        "published_date": "Wed, 08 Oct 2025 20:22:43 +0900",
+        "source": "한국경제",
+        "importance_score": "1"
+    }
+]
+```
