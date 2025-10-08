@@ -30,7 +30,7 @@ def kickoff_crew() -> str:
     """
     news_crew = NewsCrew()
     result = news_crew.crew().kickoff()
-    return result
+    return result.raw
 
 
 # --- Helper Functions ---
@@ -126,7 +126,10 @@ async def schedule_news(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     try:
         user_time_str = context.args[0]
-        user_time = datetime.strptime(user_time_str, "%H:%M").time()
+        # Parse time and make it timezone-aware
+        naive_time = datetime.strptime(user_time_str, "%H:%M").time()
+        # Create a timezone-aware time object
+        user_time = time(hour=naive_time.hour, minute=naive_time.minute, tzinfo=TIMEZONE)
     except ValueError:
         await update.message.reply_text("Time format is incorrect. Please enter in `HH:MM` format.\nExample: `/schedule 22:30`", parse_mode='Markdown')
         return
@@ -143,8 +146,7 @@ async def schedule_news(update: Update, context: ContextTypes.DEFAULT_TYPE):
         send_scheduled_news,
         time=user_time,
         chat_id=chat_id,
-        name=str(chat_id),
-        tzinfo=TIMEZONE
+        name=str(chat_id)
     )
 
     now = datetime.now(TIMEZONE)
@@ -178,7 +180,7 @@ async def check_schedule(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     await update.message.reply_text(
         f"🗓️ You have a scheduled briefing.\n"
-        f"Next execution time: {next_run_time} (Seoul Time)"
+        f"Next execution time: {next_run_time} ({TIMEZONE.zone})"
     )
 
 

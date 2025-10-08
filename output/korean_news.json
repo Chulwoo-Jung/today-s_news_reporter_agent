@@ -1,85 +1,92 @@
-```json
 [
     {
         "title": "금값 사상 첫 4000달러 돌파",
         "url": "https://www.donga.com/news/Economy/article/all/20251008/132527382/2",
-        "category": "General",
-        "summary": "금 가격이 사상 처음으로 트로이온스(31.1034768g)당 4000달러를 넘어서며, 미국의 금리 인하와 연관된 불안정한 경제 상황 속에서 안전 자산으로 주목받고 있습니다.",
+        "summary": "금 가격이 사상 처음으로 트로이온스(31.1034768g)당 4000달러(약 570만 원)의 벽을 넘었다. 미국 연방준비제도(Fed·연준)의 기준금리 인하로 달러가 약세를 보일 것이란 전망이 강해진 데다 미국발 관세 전쟁, 미국 연방정부의 업무정지(셧다운) 등으로 불확실성이 커졌기 때문으로 풀이된다. 8일 글로벌 금융정보 플랫폼 인베스팅닷컴에 따르면 금 현물 가격은 이날 오전 10시 55분경 트로이온스당 4000.11달러였다. 오후 5시경에는 4039.91달러까지 치솟았다.",
         "published_date": "Thu, 09 Oct 2025 01:40:00 +0900",
         "source": "동아일보",
-        "importance_score": "1"
+        "category": "General",
+        "importance_score": 10
+    },
+    {
+        "title": "빵-과일-유제품값 5년새 30%대 껑충… 무서운 밥상 물가에 정부 “담합 조사”",
+        "url": "https://www.donga.com/news/Economy/article/all/20251008/132527256/2",
+        "summary": "먹거리 물가가 최근 5년간 20% 넘게 급등하며 서민들의 부담이 커지고 있다. 소비가 많은 편인 과일과 빵 가격 상승률은 40%에 육박했다. 이재명 대통령이 먹거리 물가 문제의 심각성을 지적하자 공정거래위원회는 식품업계의 담합에 강경하게 대응하기로 했다.",
+        "published_date": "Thu, 09 Oct 2025 01:40:00 +0900",
+        "source": "동아일보",
+        "category": "General",
+        "importance_score": 9
     },
     {
         "title": "삼중고 철강, 中에 치이고 美이어 EU도 “관세 50%”",
         "url": "https://www.donga.com/news/Economy/article/all/20251008/132527380/2",
-        "category": "General",
-        "summary": "EU가 수입 철강에 대한 고관세를 50%로 인상함에 따라 한국 철강업계가 미국과 중국의 압박에 이어 새로운 위기를 맞았습니다.",
+        "summary": "유럽연합(EU)이 수입 철강에 대한 고관세 부과 계획을 발표하면서 한국 철강업계에 비상이 걸렸다. 미국의 철강 관세 부과와 중국발 저가 철강 공급에 더해 EU 관세 리스크까지 발생하며 한국 철강업체들 사이에서는 ‘삼중고’ 위기감이 확산되고 있다.",
         "published_date": "Thu, 09 Oct 2025 01:40:00 +0900",
         "source": "동아일보",
-        "importance_score": "1"
+        "category": "General",
+        "importance_score": 8
     },
     {
-        "title": "금값 올해만 53% 뛰어… 美셧다운-관세 불안속 ‘안전자산 랠리’",
-        "url": "https://www.donga.com/news/Economy/article/all/20251008/132527259/2",
-        "category": "General",
-        "summary": "금 가격 상승이 뚜렷해지면서 안전자산으로의 선호가 증가하고 있으며, 경제의 불확실성이 커지고 있습니다.",
-        "published_date": "Thu, 09 Oct 2025 01:40:00 +0900",
-        "source": "동아일보",
-        "importance_score": "1"
-    },
-    {
-        "title": "韓철강 수출 1위 EU도 관세폭탄… K스틸법은 국회서 발 묶여",
-        "url": "https://www.donga.com/news/Economy/article/all/20251008/132527141/2",
-        "category": "General",
-        "summary": "한국 철강업계가 미국과 중화권 외에도 EU 기구의 관세 인상에 따른 삼중 타격을 받고 있습니다.",
-        "published_date": "Thu, 09 Oct 2025 01:40:00 +0900",
-        "source": "동아일보",
-        "importance_score": "1"
-    },
-    {
-        "title": "WTO, 내년 세계 무역성장률 1.8→0.5% 낮춰",
-        "url": "https://www.donga.com/news/Inter/article/all/20251008/132527138/2",
-        "category": "General",
-        "summary": "세계무역기구(WTO)가 내년 무역 성장률 전망치를 크게 하향 조정해 글로벌 경제의 어려움을 반영하고 있습니다.",
-        "published_date": "Thu, 09 Oct 2025 01:40:00 +0900",
-        "source": "동아일보",
-        "importance_score": "1"
-    },
-    {
-        "title": "EU 철강 쿼터 감축 및 관세안, EU 자동차 업계도 비판 나서",
-        "url": "https://www.hankyung.com/article/202510088627i",
-        "category": "General",
-        "summary": "EU의 철강 쿼터 감축과 관세가 자동차 업계로부터 비판을 받고 있으며, 이는 한국에 미치는 영향도 큽니다.",
-        "published_date": "Wed, 08 Oct 2025 22:09:18 +0900",
+        "title": "노벨화학상, ‘금속-유기 골격체’ 만든 과학자 3인 수상",
+        "url": "https://www.hankyung.com/article/202510088629i",
+        "summary": "올해 노벨 화학상은 금속유기 골격체(MOF)를 연구한 기타가와 스스무 일본 교토대 교수, 리처드 롭슨 호주 멜버른대 교수, 오마르 야기 미국 버클리 캘리포니아대(UC버클리) 교수 3명에게 돌아갔다.",
+        "published_date": "Wed, 08 Oct 2025 21:15:54 +0900",
         "source": "한국경제",
-        "importance_score": "1"
+        "category": "General",
+        "importance_score": 8
     },
     {
         "title": "뉴욕증시, AI 기대감에 전 날 하락 딛고 반등",
         "url": "https://www.hankyung.com/article/202510088665i",
-        "category": "General",
-        "summary": "AI 관련 기대감으로 뉴욕 증시가 하락 이후 반등하며 글로벌 시장 전반에 긍정적인 영향을 미치고 있습니다.",
+        "summary": "No summary",
         "published_date": "Wed, 08 Oct 2025 23:19:44 +0900",
         "source": "한국경제",
-        "importance_score": "1"
+        "category": "General",
+        "importance_score": 7
     },
     {
-        "title": "연초대비 50% 넘게 뛴 금값 …올들어 '금ETF'에 91조 몰려",
-        "url": "https://www.hankyung.com/article/202510088647i",
+        "title": "금값 올해만 53% 뛰어… 美셧다운-관세 불안속 ‘안전자산 랠리’",
+        "url": "https://www.donga.com/news/Economy/article/all/20251008/132527259/2",
+        "summary": "금가격이 사상 처음으로 트로이온스당 4000달러(약 570만 원)를 돌파했다는 소식을 전하며 이같이 진단했다. 이날 금 가격은 현물과 선물 가격 모두 트로이온스당 4000달러를 넘기며 뜨거운 상승세를 이어갔다.",
+        "published_date": "Thu, 09 Oct 2025 01:40:00 +0900",
+        "source": "동아일보",
         "category": "General",
-        "summary": "금값이 올해 50% 이상 급등한 가운데 금 ETF에 대한 투자도 크게 증가하며 금 시장의 변동성을 보여줍니다.",
-        "published_date": "Wed, 08 Oct 2025 22:34:10 +0900",
-        "source": "한국경제",
-        "importance_score": "1"
+        "importance_score": 6
     },
     {
-        "title": "EU 수입 쿼터 및 관세 관련 대책 발표",
-        "url": "https://www.hankyung.com/article/202510088605i",
-        "category": "General",
-        "summary": "EU가 철강 및 기타 자원에 대한 수입 쿼터와 관세 관련 대책을 발표하며, 한국과의 무역 관계에 영향을 미치고 있습니다.",
-        "published_date": "Wed, 08 Oct 2025 20:22:43 +0900",
+        "title": "한국인 탑승 선박 나포 이스라엘군에…정부 “빠른 석방 지속 요청”",
+        "url": "https://www.mk.co.kr/news/politics/11437379",
+        "summary": "정부가 이스라엘군에 의해 나포된 구호선단에 한국인 활동가가 포함된 사실을 확인하고, 이스라엘 당국에 조속한 석방을 요청했다.",
+        "published_date": "Wed, 08 Oct 2025 21:58:23 +09:00",
+        "source": "매일경제",
+        "category": "헤드라인",
+        "importance_score": 5
+    },
+    {
+        "title": "천년고도서 새로 쓰는 ‘세기의 역사’…트럼프·시진핑 담판장은 어디",
+        "url": "https://www.mk.co.kr/news/politics/11437384",
+        "summary": "경주 APEC 정상회의 주요 무대 미리 가보니 연쇄 정상회담 열리는 HICO LED 외벽조명으로 천마 띄워 ‘정상회의 꽃’ 라한셀렉트 만찬장 차 내린후 딱 30걸음에 도착",
+        "published_date": "Wed, 08 Oct 2025 22:41:13 +09:00",
+        "source": "매일경제",
+        "category": "헤드라인",
+        "importance_score": 5
+    },
+    {
+        "title": "EU 철강 쿼터 감축 및 관세안, EU 자동차 업계도 비판 나서",
+        "url": "https://www.hankyung.com/article/202510088627i",
+        "summary": "No summary",
+        "published_date": "Wed, 08 Oct 2025 22:09:18 +0900",
         "source": "한국경제",
-        "importance_score": "1"
+        "category": "General",
+        "importance_score": 5
+    },
+    {
+        "title": "WTO, 내년 세계 무역성장률 1.8→0.5% 낮춰",
+        "url": "https://www.donga.com/news/Inter/article/all/20251008/132527138/2",
+        "summary": "세계무역기구(WTO)가 내년 세계 무역 성장률 전망치를 기존 1.8%에서 0.5%로 크게 하향 조정했다. 도널드 트럼프 미국 대통령의 ‘관세 전쟁’ 여파로 글로벌 무역이 대폭 둔화할 가능성을 반영한 것이다.",
+        "published_date": "Thu, 09 Oct 2025 01:40:00 +0900",
+        "source": "동아일보",
+        "category": "General",
+        "importance_score": 4
     }
 ]
-```

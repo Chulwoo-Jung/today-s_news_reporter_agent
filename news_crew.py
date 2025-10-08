@@ -11,7 +11,7 @@ FETCH_NEWS_COUNT = 10
 
 class NewsCrew:
     def __init__(self):
-        self.llm = ChatOpenAI(model="gpt-4o-mini")
+        self.llm = ChatOpenAI(model="gpt-4o")
 
     def research_specialist_agent(self) -> Agent:
         return Agent(
