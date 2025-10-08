@@ -12,5 +12,4 @@ wheels/
 .python-version
 .env
 .mypy_cache
-.uv.lock
 
