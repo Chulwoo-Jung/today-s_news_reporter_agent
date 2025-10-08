@@ -1,19 +1,18 @@
-from re import A
-from crewai import Agent, Task, Crew
-from crewai.project import CrewBase, task, agent, crew
-from langchain_openai import ChatOpenAI
-from dotenv import load_dotenv
 import os
+from dotenv import load_dotenv
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
 from datetime import datetime
+from tool import web_search_tool, global_news_research_tool, korean_news_research_tool
 
 load_dotenv()
 
-@CrewBase
 class NewsCrew:
     def __init__(self, global_news_account:int=10, korean_news_account:int=10):
         self.llm = ChatOpenAI(model="gpt-4o-mini")
+        self.global_news_account = global_news_account
+        self.korean_news_account = korean_news_account
 
-    @agent
     def research_agent(self) -> Agent:
         return Agent(
             role="Research Specialist",
@@ -29,9 +28,9 @@ class NewsCrew:
             tools=[]
         )
     
-    @task
     def research_global_news(self) -> Task:
         return Task(
+            agent= self.research_agent(),
             description=f""" 
             Today is {datetime.now().strftime("%Y-%m-%d")}
             Research the latest economic and financial news in *RSS format* as much as possible.
@@ -62,13 +61,14 @@ class NewsCrew:
             ]
             maximum {self.global_news_account} news.
             """,
-            output_file="output/global_news.json"
+            output_file="output/global_news.json",
+            tools=[global_news_research_tool]
         )
     
 
-    @task
     def research_korean_news(self) -> Task:
         return Task(
+            agent= self.research_agent(),
             description=f"""
             Today is {datetime.now().strftime("%Y-%m-%d")}
             Research the latest Korean economic and financial news in *RSS format* as much as possible.
@@ -99,10 +99,10 @@ class NewsCrew:
             ]
             maximum {self.korean_news_account} news.
             """,
-            output_file="output/korean_news.json"
+            output_file="output/korean_news.json",
+            tools=[korean_news_research_tool]
         )
 
-    @agent
     def editor_agent(self) -> Agent:
         return Agent(
             role="Professional Senior Editor",
@@ -119,12 +119,12 @@ class NewsCrew:
             """,
             verbose=True,
             llm=self.llm,
-            tools=[]
+            tools=[web_search_tool]
         )
 
-    @task
     def edit_and_summarize_news(self) -> Task:
         return Task(
+            agent  = self.editor_agent(),
             description="""
             Extract the critical and important news content and summarize the relevant and important content.
             *** Working Instructions, please follow them strictly ***
@@ -165,7 +165,6 @@ class NewsCrew:
             output_file="output/news_summary.json"
         )
 
-    @agent
     def curator_agent(self) -> Agent:
         return Agent(
             role="Professional News Curator",
@@ -181,9 +180,9 @@ class NewsCrew:
             tools=[]
         )
 
-    @task
     def curate_final_news_task(self) -> Task:
         return Task(
+            agent = self.curator_agent(),
             description=f"""
             Today is {datetime.now().strftime("%Y-%m-%d")}
             Curate and select the 10 most important news from the previous research and summarization results.
@@ -262,3 +261,16 @@ class NewsCrew:
             context=[self.edit_and_summarize_news()]
         )
     
+    def crew(self) -> Crew:
+        return Crew(
+            agents=[self.research_agent(), self.editor_agent(), self.curator_agent()],
+            tasks = [self.research_global_news(), self.research_korean_news(), self.edit_and_summarize_news(), self.curate_final_news_task()],
+            verbose=True
+        )
+
+if __name__ == "__main__":
+    # output 디렉토리 생성
+    os.makedirs("output", exist_ok=True)
+    
+    # Crew 실행
+    NewsCrew().crew().kickoff()

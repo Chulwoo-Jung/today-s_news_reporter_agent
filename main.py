@@ -5,7 +5,7 @@ from telegram.ext import (
     MessageHandler,
     filters,
 )
-from chatbot_crew import ChatBotCrew
+from news_crew import NewsCrew
 from db import add_to_conversation
 from env import TELEGRAM_BOT_TOKEN
 
@@ -18,7 +18,7 @@ async def handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
     user_message = update.message.text
 
-    chatbot_crew = ChatBotCrew()
+    chatbot_crew = NewsCrew()
 
     result = chatbot_crew.crew().kickoff(inputs={"message": user_message})
 
