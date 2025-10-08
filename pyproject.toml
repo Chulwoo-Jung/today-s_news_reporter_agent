@@ -1,7 +1,7 @@
 [project]
 name = "agent-a-to-z"
 version = "0.1.0"
-description = "탄탄한 AI 에이전트 A to Z"
+description = "AI Agent with crewai"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
