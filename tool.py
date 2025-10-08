@@ -30,30 +30,30 @@ def _get_rss(rss_url:dict[str,str], each:int=10):
     return all_articles
 
 class GlobalNewsResearchToolInput(BaseModel):
-    each: int = Field(default=10, description="Number of articles to fetch per source")
+    pass  # No input parameters needed
 
 class GlobalNewsResearchTool(BaseTool):
     name: str = "global_news_research_tool"
-    description: str = "Search the web for the latest global news"
+    description: str = "Fetch the latest global economic and financial news from RSS feeds (Google News, BBC, CNN). Automatically fetches 10 articles per source. Returns a list of articles with title, url, summary, published_date, source, category, and importance_score."
     input_schema: Type[BaseModel] = GlobalNewsResearchToolInput
 
-    def _run(self, each: int = 10) -> list[dict]:
+    def _run(self) -> list[dict]:
         global_url = {
             "Google News": "https://news.google.com/rss/search?q=global+economy+finance&hl=en-US&gl=US&ceid=US:en",
             "BBC": "https://feeds.bbci.co.uk/news/business/rss.xml",
             "CNN": "https://rss.cnn.com/rss/money_news_international.rss",
         }
-        return _get_rss(global_url, each=each)
+        return _get_rss(global_url, each=10)
 
 class KoreanNewsResearchToolInput(BaseModel):
-    each: int = Field(default=10, description="Number of articles to fetch per source")
+    pass  # No input parameters needed
 
 class KoreanNewsResearchTool(BaseTool):
     name: str = "korean_news_research_tool"
-    description: str = "Search the web for the latest Korean news"
+    description: str = "Fetch the latest Korean economic and financial news from RSS feeds (연합뉴스, 조선일보, 동아일보, 매일경제, 한국경제). Automatically fetches 10 articles per source. Returns a list of articles with title, url, summary, published_date, source, category, and importance_score."
     input_schema: Type[BaseModel] = KoreanNewsResearchToolInput
 
-    def _run(self, each: int = 10) -> list[dict]:
+    def _run(self) -> list[dict]:
         korean_rss_feeds = {
             "연합뉴스": "https://www.yna.co.kr/RSS/economy.xml",  # Changed to economy feed
             "조선일보": "https://www.chosun.com/arc/outboundfeeds/rss/economy/?outputType=xml",
@@ -61,7 +61,7 @@ class KoreanNewsResearchTool(BaseTool):
             "매일경제": "https://www.mk.co.kr/rss/30000001/",
             "한국경제": "https://www.hankyung.com/feed/economy",
         }
-        return _get_rss(korean_rss_feeds, each=each)
+        return _get_rss(korean_rss_feeds, each=10)
 
 class WebSearchToolInput(BaseModel):
     url: str = Field(..., description="The URL to look for.")
@@ -98,33 +98,6 @@ class WebSearchTool(BaseTool):
                 "url": url,
                 "content": f"Failed to scrape content: {str(e)}"
             }
-
-    name:str = "web_search_tool"
-    description:str = "Web Content Scraper Tool. Scrape the web for the information based on the URL. Return the result in text format."
-    input_schema:Type[BaseModel] = WebSearchToolInput
-    
-    def _run(self, url:str) -> dict[str, str]:
-        app = Firecrawl(api_key=FIRECRAWL_API_KEY)
-        response : Any = app.scrape(url=url)
-
-        title = "No Title"
-        if hasattr(response, "title"):
-            title = response.title
-        
-        content = "No Content"
-        if hasattr(response, "content"):
-            content = response.content
-        elif hasattr(response, "metadata"):
-            content = response.metadata
-        elif hasattr(response, "markdown"):
-            content = response.markdown
-        
-        result = {
-            "title": title,
-            "url": url,
-            "content": content
-        }
-        return result
 
 web_search_tool = WebSearchTool()
 global_news_research_tool = GlobalNewsResearchTool()
