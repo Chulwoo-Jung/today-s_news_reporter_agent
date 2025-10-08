@@ -14,6 +14,7 @@ dependencies = [
     { name = "langchain" },
     { name = "langchain-openai" },
     { name = "python-telegram-bot", extra = ["job-queue"] },
+    { name = "pytz" },
 ]
 
 [package.metadata]
@@ -25,6 +26,7 @@ requires-dist = [
     { name = "langchain", specifier = ">=0.3.27" },
     { name = "langchain-openai", specifier = ">=0.3.35" },
     { name = "python-telegram-bot", extras = ["job-queue"], specifier = ">=22.3" },
+    { name = "pytz", specifier = ">=2025.2" },
 ]
 
 [[package]]
@@ -2534,10 +2536,12 @@ dependencies = [
     { name = "pyarrow" },
 ]
 wheels = [
+    { url = "https://files.pythonhosted.org/packages/83/2d/1564c2fdc4a05ae50395529e231e6bba8170de814598b6e623de0bf58dfe/pylance-0.38.2-cp39-abi3-macosx_11_0_arm64.whl", hash = "sha256:4fe7416adac1acc503374a7f52999283ff714cfc0a5d6cc87b470721593548bf", size = 42215988, upload-time = "2025-10-08T18:20:31.506Z" },
     { url = "https://files.pythonhosted.org/packages/f2/f8/c3c2944573be5cf4b3c789d2474b7feffe2045ea788476ff285461c44f0e/pylance-0.38.2-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:50fe486caeff35ce71084eb73539a04c20fc9bbecaa8476aeb8036aeaa4a2175", size = 44348573, upload-time = "2025-10-08T04:49:25.058Z" },
     { url = "https://files.pythonhosted.org/packages/75/a8/e6165c016d04cf31f7206cefc78da878ba9c05d877c4640164c4e7d7db01/pylance-0.38.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:e3ec9a946bb4de2a2179424ca6ff98f0200545844a6e562f13ca962647ef4117", size = 48214643, upload-time = "2025-10-08T04:54:02.152Z" },
     { url = "https://files.pythonhosted.org/packages/c2/ba/73851dc80dc690d2501dbbe582de7adca5a3fb08023af7aa931c4f153c0a/pylance-0.38.2-cp39-abi3-manylinux_2_28_aarch64.whl", hash = "sha256:17c916d0cd0225766747733870f666ee61f9830a007be6c74b299999e2cba211", size = 44387342, upload-time = "2025-10-08T04:50:44.961Z" },
     { url = "https://files.pythonhosted.org/packages/fe/ec/2f059607ae28b1c363422a223ce08e2771e5c3c685390fd595e6e3b54b3d/pylance-0.38.2-cp39-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:bbd4cc7ac93cfea28c4366038c904474c3b36cbc6b6f05212d933a85f7ca0ff6", size = 48193224, upload-time = "2025-10-08T04:53:48.562Z" },
+    { url = "https://files.pythonhosted.org/packages/67/83/68626c152fbcf6879c3203a2eea065c2b4eb0b923b81a7e50f6e8c80b88e/pylance-0.38.2-cp39-abi3-win_amd64.whl", hash = "sha256:a55023cdc34518acaf6dc8cc922e6627cc8d8757e45beafeb4da1ac25ca70908", size = 49559094, upload-time = "2025-10-08T18:27:17.688Z" },
 ]
 
 [[package]]
@@ -2651,6 +2655,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/d8/e7/16fec46c8d255c4bbc4b185d89c91dc92cdb802836570d8004d0db169c91/pytube-15.0.0.tar.gz", hash = "sha256:076052efe76f390dfa24b1194ff821d4e86c17d41cb5562f3a276a8bcbfc9d1d", size = 67229, upload-time = "2023-05-07T19:39:01.903Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/51/64/bcf8632ed2b7a36bbf84a0544885ffa1d0b4bcf25cc0903dba66ec5fdad9/pytube-15.0.0-py3-none-any.whl", hash = "sha256:07b9904749e213485780d7eb606e5e5b8e4341aa4dccf699160876da00e12d78", size = 57594, upload-time = "2023-05-07T19:38:59.191Z" },
+]
+
+[[package]]
+name = "pytz"
+version = "2025.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/f8/bf/abbd3cdfb8fbc7fb3d4d38d320f2441b1e7cbe29be4f23797b4a2b5d8aac/pytz-2025.2.tar.gz", hash = "sha256:360b9e3dbb49a209c21ad61809c7fb453643e048b38924c765813546746e81c3", size = 320884, upload-time = "2025-03-25T02:25:00.538Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/81/c4/34e93fe5f5429d7570ec1fa436f1986fb1f00c3e0f43a589fe2bbcd22c3f/pytz-2025.2-py2.py3-none-any.whl", hash = "sha256:5ddf76296dd8c44c26eb8f4b6f35488f3ccbf6fbbd7adee0b7262d43f0ec2f00", size = 509225, upload-time = "2025-03-25T02:24:58.468Z" },
 ]
 
 [[package]]
